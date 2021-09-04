@@ -5,7 +5,7 @@ X1 = X1/255
 p = 0.05
 X3 = imnoise(X1,'salt & pepper',p)
 imwrite(X3,'e2.png')
-Y3 = medfilt2(X3,[3 3])
+PSNR_3 = psnr(Y2_3,X1)
 % subplot(1,2,1)
 % imshow(X3)
 % subplot(1,2,2)
