@@ -4,7 +4,7 @@ X1 = X1/255
 
 p = 0.05
 X3 = imnoise(X1,'salt & pepper',p)
-imwrite(X1,'./e3.png')
+imwrite(X3,'./e3.png')
 
 p= 0.01
 X4 = imnoise(X1,'salt & pepper',p)
